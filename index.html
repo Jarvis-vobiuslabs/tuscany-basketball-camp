@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuscany Basketball Camp – Calgary Summer 2025</title>
+  <meta name="description" content="Give your child a summer of structured skill-building, confidence, and teamwork. Tuscany Club Summer Basketball Camp runs July through August 15 in Calgary, AB. Ages 7–15. Limited spots available.">
+  <meta property="og:title" content="Tuscany Basketball Camp – Calgary Summer 2025">
+  <meta property="og:description" content="90-minute sessions, 2× per week. CPR-certified coaches. Inclusive environment. Ages 7–15. Reserve your spot today.">
+  <meta property="og:image" content="https://jarvis-vobiuslabs.github.io/tuscany-basketball-camp/assets/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jarvis-vobiuslabs.github.io/tuscany-basketball-camp/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tuscany Basketball Camp – Calgary Summer 2025">
+  <meta name="twitter:description" content="90-minute sessions, 2× per week. CPR-certified coaches. Ages 7–15. Reserve your spot today.">
+  <meta name="twitter:image" content="https://jarvis-vobiuslabs.github.io/tuscany-basketball-camp/assets/og-image.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================
+       CSS CUSTOM PROPERTIES
+    ========================================== */
+    :root {
+      --navy:        #1e3a5f;
+      --navy-dark:   #0f2340;
+      --navy-light:  #2d4f7f;
+      --orange:      #ea580c;
+      --orange-dark: #c2410c;
+      --orange-lt:   #fb923c;
+      --orange-pale: #fff7ed;
+      --green:       #16a34a;
+      --green-pale:  #f0fdf4;
+      --white:       #ffffff;
+      --off-white:   #f8fafc;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --text:      #0f172a;
+      --text-muted:#64748b;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow:    0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+      --shadow-md: 0 10px 25px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.07);
+      --shadow-lg: 0 20px 40px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.08);
+      --radius:    12px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --t: 0.3s;
+    }
+
+    /* ==========================================
+       RESET & BASE
+    ========================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    input, select, textarea { font-family: inherit; }
+    ul { list-style: none; }
+
+    /* ==========================================
+       LAYOUT
+    ========================================== */
+    .container    { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .container-sm { width: 100%; max-width: 800px;  margin: 0 auto; padding: 0 1.5rem; }
+    .section-pad  { padding: 5rem 0; }
+    .section-pad-lg { padding: 7rem 0; }
+
+    /* ==========================================
+       TYPOGRAPHY
+    ========================================== */
+    .display-xl { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 9vw, 7.5rem); line-height: 0.92; letter-spacing: 0.02em; }
+    .display-lg { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1; letter-spacing: 0.02em; }
+    .display-md { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.05; letter-spacing: 0.02em; }
+
+    .section-label {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--orange-pale); color: var(--orange-dark);
+      padding: 0.375rem 0.875rem; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .section-header { margin-bottom: 3.5rem; }
+    .section-header.center { text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+    /* ==========================================
+       BUTTONS
+    ========================================== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      padding: 0.875rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem;
+      transition: all var(--t) var(--ease); cursor: pointer; border: 2px solid transparent; white-space: nowrap;
+    }
+    .btn-primary  { background: var(--orange); color: var(--white); border-color: var(--orange); }
+    .btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(234,88,12,0.35); }
+    .btn-secondary { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.45); }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: var(--white); }
+    .btn-outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+    .btn-lg { padding: 1.125rem 2.5rem; font-size: 1.1rem; border-radius: 10px; }
+    .btn-sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+    .btn-full { width: 100%; }
+
+    /* ==========================================
+       NAVIGATION
+    ========================================== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 1.25rem 0; transition: all var(--t) var(--ease);
+    }
+    .nav.scrolled {
+      background: rgba(15,35,64,0.97); backdrop-filter: blur(14px);
+      padding: 0.75rem 0; box-shadow: 0 2px 24px rgba(0,0,0,0.25);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 0.625rem; color: var(--white); }
+    .nav-logo-icon {
+      width: 36px; height: 36px; background: var(--orange); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0;
+    }
+    .nav-logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.05em; line-height: 1; }
+    .nav-logo-text span { display: block; font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+    .nav-links { display: flex; align-items: center; gap: 1.75rem; }
+    .nav-links a { color: rgba(255,255,255,0.78); font-size: 0.9rem; font-weight: 500; transition: color var(--t); }
+    .nav-links a:hover { color: var(--white); }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+
+    /* ==========================================
+       HERO
+    ========================================== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(155deg, var(--navy-dark) 0%, var(--navy) 55%, #1b4f82 100%);
+      position: relative; display: flex; align-items: center; overflow: hidden;
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.055;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,1) 59px, rgba(255,255,255,1) 60px),
+        repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,1) 59px, rgba(255,255,255,1) 60px);
+    }
+    .hero-ring {
+      position: absolute; right: -8%; top: 50%; transform: translateY(-50%);
+      width: 65vmin; height: 65vmin;
+      border: 2px solid rgba(255,255,255,0.07); border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-ring::before {
+      content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 35%; height: 35%; border: 2px solid rgba(255,255,255,0.07); border-radius: 50%;
+    }
+    .hero-ball-deco {
+      position: absolute; right: 7%; top: 18%;
+      width: clamp(70px, 11vw, 170px); height: clamp(70px, 11vw, 170px);
+      opacity: 0.13; animation: floatBall 7s ease-in-out infinite;
+    }
+    @keyframes floatBall { 0%,100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-22px) rotate(18deg); } }
+
+    .hero-content { position: relative; z-index: 2; padding: 9rem 0 6rem; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(234,88,12,0.18); border: 1px solid rgba(234,88,12,0.35);
+      color: var(--orange-lt); padding: 0.5rem 1rem; border-radius: 100px;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.75rem;
+    }
+    .eyebrow-dot { width: 6px; height: 6px; background: var(--orange-lt); border-radius: 50%; animation: blink 2s infinite; }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 11vw, 8.5rem);
+      line-height: 0.9; letter-spacing: 0.02em; color: var(--white); margin-bottom: 1.5rem;
+    }
+    .hero-title .accent { color: var(--orange); }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem); color: rgba(255,255,255,0.72);
+      max-width: 540px; line-height: 1.75; margin-bottom: 2.5rem;
+    }
+    .hero-ctas { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.75rem; }
+    .hero-checks { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
+    .hero-check { display: flex; align-items: center; gap: 0.45rem; color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 500; }
+    .hero-check svg { width: 16px; height: 16px; color: var(--orange-lt); flex-shrink: 0; }
+    .hero-urgency {
+      display: inline-flex; align-items: center; gap: 0.75rem; margin-top: 2rem;
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 8px; padding: 0.875rem 1.25rem;
+      color: rgba(255,255,255,0.88); font-size: 0.9rem; font-weight: 500;
+    }
+    .hero-urgency strong { color: var(--orange-lt); }
+
+    /* ==========================================
+       TRUST BAR
+    ========================================== */
+    .trust-bar { background: var(--white); padding: 1.75rem 0; border-bottom: 1px solid var(--gray-100); box-shadow: var(--shadow-sm); }
+    .trust-bar-inner { display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 0.75rem; color: var(--gray-700); font-size: 0.9rem; font-weight: 600; }
+    .trust-icon { width: 40px; height: 40px; background: var(--orange-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; }
+
+    /* ==========================================
+       SKILLS
+    ========================================== */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; }
+    .skill-card {
+      background: var(--white); border-radius: var(--radius); padding: 1.875rem;
+      border: 1px solid var(--gray-100); box-shadow: var(--shadow);
+      transition: all var(--t) var(--ease); position: relative; overflow: hidden;
+    }
+    .skill-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-lt));
+      transform: scaleX(0); transition: transform var(--t) var(--ease); transform-origin: left;
+    }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .skill-card:hover::after { transform: scaleX(1); }
+    .skill-icon { width: 52px; height: 52px; background: var(--orange-pale); border-radius: 13px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.125rem; }
+    .skill-title { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+    .skill-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* ==========================================
+       SCHEDULE
+    ========================================== */
+    .schedule-section { background: var(--navy); color: var(--white); position: relative; overflow: hidden; }
+    .schedule-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(255,255,255,0.025) 79px, rgba(255,255,255,0.025) 80px),
+        repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(255,255,255,0.025) 79px, rgba(255,255,255,0.025) 80px);
+    }
+    .schedule-section .section-label { background: rgba(234,88,12,0.2); color: var(--orange-lt); }
+    .schedule-section .display-md { color: var(--white); }
+    .schedule-stats {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem; position: relative; z-index: 1; margin-bottom: 3.5rem;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.11);
+      border-radius: var(--radius); padding: 2rem; text-align: center;
+      transition: all var(--t) var(--ease);
+    }
+    .stat-card:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
+    .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--orange); line-height: 1; margin-bottom: 0.2rem; }
+    .stat-unit { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.6rem; }
+    .stat-label { font-size: 0.95rem; font-weight: 600; color: rgba(255,255,255,0.88); margin-bottom: 0.35rem; }
+    .stat-detail { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.5; }
+
+    .age-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; position: relative; z-index: 1; }
+    .age-group-card {
+      background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.13);
+      border-radius: var(--radius); padding: 2rem; transition: all var(--t) var(--ease);
+    }
+    .age-group-card:hover { border-color: var(--orange); background: rgba(234,88,12,0.1); }
+    .age-tag { display: inline-block; background: var(--orange); color: var(--white); padding: 0.25rem 0.7rem; border-radius: 6px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.875rem; }
+    .age-title { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--white); margin-bottom: 0.4rem; }
+    .age-desc { font-size: 0.875rem; color: rgba(255,255,255,0.55); line-height: 1.65; }
+    @media (max-width: 580px) { .age-groups { grid-template-columns: 1fr; } }
+
+    /* ==========================================
+       COACHES
+    ========================================== */
+    .coaches-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .coach-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: all var(--t) var(--ease); }
+    .coach-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .coach-photo { height: 280px; display: flex; align-items: center; justify-content: center; position: relative; }
+    .coach-photo-nathan { background: linear-gradient(135deg, #1e3a5f 0%, #2d5d9e 100%); }
+    .coach-photo-josh   { background: linear-gradient(135deg, #7c2d12 0%, #b45309 100%); }
+    .coach-initials { font-family: 'Bebas Neue', sans-serif; font-size: 5.5rem; color: rgba(255,255,255,0.85); line-height: 1; text-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+    .coach-role-badge { position: absolute; bottom: 1.125rem; left: 1.125rem; background: var(--orange); color: var(--white); padding: 0.3rem 0.8rem; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    .coach-info { padding: 1.75rem; }
+    .coach-name { font-size: 1.35rem; font-weight: 800; color: var(--navy); margin-bottom: 0.2rem; }
+    .coach-title { font-size: 0.78rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 0.875rem; }
+    .coach-bio { font-size: 0.875rem; color: var(--text-muted); line-height: 1.72; margin-bottom: 1.125rem; }
+    .coach-creds { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cred-pill { background: var(--off-white); color: var(--gray-700); padding: 0.25rem 0.7rem; border-radius: 6px; font-size: 0.72rem; font-weight: 600; }
+
+    /* ==========================================
+       SAFETY
+    ========================================== */
+    .safety-section { background: var(--green-pale); border-top: 1px solid #dcfce7; border-bottom: 1px solid #dcfce7; }
+    .safety-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.5rem; }
+    .safety-item { text-align: center; padding: 2rem 1.25rem; }
+    .safety-icon-wrap { width: 60px; height: 60px; background: var(--white); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin: 0 auto 1rem; box-shadow: var(--shadow); }
+    .safety-title { font-size: 0.95rem; font-weight: 700; color: var(--gray-800); margin-bottom: 0.4rem; }
+    .safety-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.65; }
+    .inclusion-box {
+      background: var(--white); border: 2px solid #86efac; border-radius: var(--radius-lg);
+      padding: 2.5rem; margin-top: 3rem; text-align: center;
+    }
+    .inclusion-icon { font-size: 2.25rem; margin-bottom: 0.875rem; }
+    .inclusion-title { font-size: 1.2rem; font-weight: 800; color: var(--gray-800); margin-bottom: 0.6rem; }
+    .inclusion-text { font-size: 0.925rem; color: var(--text-muted); max-width: 620px; margin: 0 auto; line-height: 1.75; }
+
+    /* ==========================================
+       PRICING
+    ========================================== */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 2rem; align-items: start; }
+    .pricing-card {
+      background: var(--white); border: 2px solid var(--gray-200); border-radius: var(--radius-lg);
+      padding: 2.5rem; position: relative; transition: all var(--t) var(--ease);
+    }
+    .pricing-card:hover { border-color: var(--orange); box-shadow: var(--shadow-md); }
+    .pricing-card.featured { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(234,88,12,0.1); }
+    .pricing-badge {
+      position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+      background: var(--orange); color: var(--white);
+      padding: 0.35rem 1.25rem; border-radius: 0 0 10px 10px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;
+    }
+    .pricing-plan { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; }
+    .pricing-price { display: flex; align-items: baseline; gap: 0.2rem; margin-bottom: 0.4rem; }
+    .pricing-currency { font-size: 1.4rem; font-weight: 700; color: var(--navy); }
+    .pricing-amount { font-family: 'Bebas Neue', sans-serif; font-size: 4rem; line-height: 1; color: var(--navy); }
+    .pricing-period { font-size: 0.82rem; color: var(--text-muted); }
+    .pricing-note { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .pricing-features { margin-bottom: 2rem; }
+    .pricing-feature { display: flex; align-items: flex-start; gap: 0.7rem; padding: 0.6rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.875rem; }
+    .pricing-feature:last-child { border-bottom: none; }
+    .feat-check { width: 18px; height: 18px; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: var(--green); flex-shrink: 0; margin-top: 1px; }
+    .spots-bar { background: var(--orange-pale); border: 1px solid #fed7aa; border-radius: var(--radius); padding: 1.25rem 1.5rem; margin-top: 3rem; text-align: center; }
+    .spots-bar strong { color: var(--orange-dark); }
+    .pricing-footer-note { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 1.5rem; line-height: 1.7; }
+
+    /* ==========================================
+       TESTIMONIALS
+    ========================================== */
+    .testimonials-section { background: var(--off-white); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; }
+    .testimonial-card { background: var(--white); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); border: 1px solid var(--gray-100); }
+    .t-stars { font-size: 0.95rem; color: #fbbf24; margin-bottom: 0.875rem; letter-spacing: 0.08em; }
+    .t-quote { font-size: 0.925rem; color: var(--gray-700); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem; }
+    .t-author { display: flex; align-items: center; gap: 0.875rem; }
+    .t-avatar { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; color: var(--white); flex-shrink: 0; }
+    .t-name { font-weight: 700; font-size: 0.875rem; color: var(--gray-800); }
+    .t-meta { font-size: 0.78rem; color: var(--text-muted); }
+    .testimonial-disclaimer { text-align: center; margin-top: 1.75rem; font-size: 0.78rem; color: var(--text-muted); font-style: italic; }
+
+    /* ==========================================
+       FAQ
+    ========================================== */
+    .faq-list { max-width: 740px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--gray-200); }
+    .faq-question {
+      width: 100%; text-align: left; padding: 1.375rem 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      font-weight: 600; font-size: 1rem; color: var(--gray-800);
+      cursor: pointer; background: none; border: none; transition: color var(--t);
+    }
+    .faq-question:hover { color: var(--orange); }
+    .faq-chevron {
+      width: 26px; height: 26px; border-radius: 7px; background: var(--gray-100);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: all var(--t); font-size: 0.7rem; color: var(--gray-500);
+    }
+    .faq-item.open .faq-chevron { background: var(--orange); color: var(--white); transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.42s var(--ease); }
+    .faq-item.open .faq-answer { max-height: 600px; }
+    .faq-answer-inner { padding-bottom: 1.375rem; font-size: 0.925rem; color: var(--text-muted); line-height: 1.8; }
+    .faq-answer-inner a { color: var(--orange); text-decoration: underline; }
+
+    /* ==========================================
+       LOCATION
+    ========================================== */
+    .location-section { background: var(--off-white); }
+    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .location-heading { font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 1.5rem; }
+    .location-row { display: flex; align-items: flex-start; gap: 0.875rem; margin-bottom: 1.25rem; }
+    .loc-icon { font-size: 1.2rem; margin-top: 0.1rem; flex-shrink: 0; }
+    .loc-text strong { display: block; font-weight: 700; color: var(--gray-800); margin-bottom: 0.2rem; font-size: 0.925rem; }
+    .loc-text span { font-size: 0.875rem; color: var(--text-muted); }
+    .map-placeholder {
+      height: 360px; background: var(--gray-200); border-radius: var(--radius-lg);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.875rem;
+      border: 2px dashed var(--gray-300); position: relative; overflow: hidden;
+    }
+    .map-placeholder::before { content: '📍'; font-size: 2.5rem; }
+    .map-p-title { font-size: 0.95rem; font-weight: 700; color: var(--gray-600); }
+    .map-p-sub { font-size: 0.82rem; color: var(--gray-400); text-align: center; max-width: 220px; line-height: 1.5; }
+    .map-link { font-size: 0.82rem; color: var(--orange); font-weight: 600; text-decoration: underline; }
+    @media (max-width: 768px) { .location-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    /* ==========================================
+       FINAL CTA
+    ========================================== */
+    .final-cta {
+      background: linear-gradient(140deg, var(--navy-dark) 0%, var(--navy) 60%, #1b4f82 100%);
+      color: var(--white); text-align: center; position: relative; overflow: hidden;
+    }
+    .final-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.03) 59px, rgba(255,255,255,0.03) 60px),
+        repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.03) 59px, rgba(255,255,255,0.03) 60px);
+    }
+    .final-cta-content { position: relative; z-index: 1; }
+    .final-cta .section-label { background: rgba(234,88,12,0.2); color: var(--orange-lt); }
+    .final-cta .display-lg { color: var(--white); margin-bottom: 1.125rem; }
+    .final-cta p { font-size: 1.1rem; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 2.5rem; }
+
+    /* ==========================================
+       FOOTER
+    ========================================== */
+    footer { background: var(--gray-900); color: rgba(255,255,255,0.55); padding: 3rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; margin-bottom: 2rem; }
+    .footer-brand .nav-logo { margin-bottom: 0.875rem; }
+    .footer-tagline { font-size: 0.85rem; line-height: 1.65; max-width: 260px; }
+    .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .footer-link { color: rgba(255,255,255,0.45); font-size: 0.85rem; transition: color var(--t); }
+    .footer-link:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.09); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-size: 0.78rem; }
+    @media (max-width: 580px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    /* ==========================================
+       MOBILE STICKY CTA
+    ========================================== */
+    .mobile-cta {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
+      background: var(--white); padding: 0.875rem 1.5rem;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
+      display: none; align-items: center; justify-content: space-between; gap: 1rem;
+      border-top: 1px solid var(--gray-200);
+      transform: translateY(100%); transition: transform 0.4s var(--ease);
+    }
+    .mobile-cta.show { transform: translateY(0); }
+    .mobile-cta-info { font-size: 0.82rem; color: var(--text-muted); }
+    .mobile-cta-info strong { display: block; font-size: 0.95rem; color: var(--text); }
+    @media (max-width: 768px) { .mobile-cta { display: flex; } }
+
+    /* ==========================================
+       REGISTRATION MODAL
+    ========================================== */
+    .modal-overlay {
+      position: fixed; inset: 0; z-index: 2000;
+      background: rgba(10,20,40,0.78); backdrop-filter: blur(5px);
+      display: flex; align-items: center; justify-content: center; padding: 1.5rem;
+      opacity: 0; visibility: hidden; transition: all var(--t) var(--ease);
+    }
+    .modal-overlay.open { opacity: 1; visibility: visible; }
+    .modal-box {
+      background: var(--white); border-radius: var(--radius-xl);
+      width: 100%; max-width: 560px; max-height: 92vh; overflow-y: auto;
+      transform: scale(0.95) translateY(18px); transition: transform var(--t) var(--ease);
+      box-shadow: var(--shadow-lg);
+    }
+    .modal-overlay.open .modal-box { transform: scale(1) translateY(0); }
+
+    .modal-header {
+      padding: 1.75rem 1.75rem 1.25rem;
+      border-bottom: 1px solid var(--gray-100);
+      position: sticky; top: 0; background: var(--white); z-index: 2;
+    }
+    .modal-progress { display: flex; gap: 0.4rem; margin-bottom: 0.875rem; }
+    .prog-step { height: 4px; flex: 1; background: var(--gray-200); border-radius: 2px; transition: background 0.3s; }
+    .prog-step.active { background: var(--orange); }
+    .prog-step.done   { background: var(--green); }
+    .modal-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+    .modal-title { font-size: 1.2rem; font-weight: 800; color: var(--navy); }
+    .modal-sub { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .modal-close-btn {
+      width: 34px; height: 34px; border-radius: 8px; background: var(--gray-100);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: var(--gray-500); border: none; cursor: pointer;
+      transition: all var(--t); flex-shrink: 0;
+    }
+    .modal-close-btn:hover { background: var(--gray-200); color: var(--gray-800); }
+
+    .modal-body   { padding: 1.75rem; }
+    .modal-footer { padding: 1.25rem 1.75rem 1.75rem; border-top: 1px solid var(--gray-100); display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+
+    .step { display: none; }
+    .step.active { display: block; }
+
+    /* Step 1 – Age group */
+    .age-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .age-opt input[type="radio"] { position: absolute; opacity: 0; pointer-events: none; }
+    .age-opt { position: relative; }
+    .age-opt-lbl {
+      display: block; padding: 1.75rem 1.25rem;
+      border: 2px solid var(--gray-200); border-radius: var(--radius);
+      cursor: pointer; text-align: center; transition: all var(--t);
+    }
+    .age-opt-lbl:hover { border-color: var(--orange-lt); }
+    .age-opt input:checked + .age-opt-lbl { border-color: var(--orange); background: var(--orange-pale); }
+    .age-opt-emoji { font-size: 1.875rem; margin-bottom: 0.625rem; }
+    .age-opt-title { font-size: 1.4rem; font-weight: 800; color: var(--navy); }
+    .age-opt-desc  { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+    /* Step 2 – Days & time */
+    .field-label-sm { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
+    .day-opts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.625rem; margin-bottom: 1.75rem; }
+    .day-opt { position: relative; }
+    .day-opt input[type="checkbox"] { position: absolute; opacity: 0; pointer-events: none; }
+    .day-opt-lbl {
+      display: block; padding: 0.875rem 0.25rem;
+      border: 2px solid var(--gray-200); border-radius: var(--radius);
+      cursor: pointer; text-align: center; transition: all var(--t);
+    }
+    .day-opt-lbl:hover { border-color: var(--orange-lt); }
+    .day-opt input:checked + .day-opt-lbl { border-color: var(--orange); background: var(--orange-pale); }
+    .day-abbr { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; }
+    .day-full  { font-size: 0.8rem; font-weight: 700; color: var(--navy); display: block; margin-top: 0.2rem; }
+
+    .time-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; }
+    .time-opt { position: relative; }
+    .time-opt input[type="radio"] { position: absolute; opacity: 0; pointer-events: none; }
+    .time-opt-lbl { display: block; padding: 1.125rem; border: 2px solid var(--gray-200); border-radius: var(--radius); cursor: pointer; transition: all var(--t); }
+    .time-opt-lbl:hover { border-color: var(--orange-lt); }
+    .time-opt input:checked + .time-opt-lbl { border-color: var(--orange); background: var(--orange-pale); }
+    .time-title { font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; font-size: 0.9rem; }
+    .time-range { font-size: 0.82rem; color: var(--text-muted); }
+
+    /* Step 3 – Contact form */
+    .form-section-hdr { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-100); margin: 1.5rem 0 1rem; }
+    .form-section-hdr:first-of-type { margin-top: 0; }
+    .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-grp { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.875rem; }
+    .form-lbl { font-size: 0.82rem; font-weight: 600; color: var(--gray-700); }
+    .form-lbl .req { color: var(--orange); }
+    .form-inp {
+      padding: 0.7rem 0.9rem; border: 1.5px solid var(--gray-200); border-radius: 8px;
+      font-size: 0.925rem; color: var(--text); width: 100%;
+      transition: border-color var(--t); background: var(--white);
+    }
+    .form-inp:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(234,88,12,0.09); }
+    .form-inp.err { border-color: #ef4444; }
+    .form-err { font-size: 0.75rem; color: #ef4444; display: none; }
+    .form-err.show { display: block; }
+    textarea.form-inp { resize: vertical; min-height: 72px; }
+    @media (max-width: 480px) { .form-row-2 { grid-template-columns: 1fr; } }
+
+    /* Step 4 – Confirmation */
+    .confirm-hdr { text-align: center; margin-bottom: 1.75rem; }
+    .confirm-icon { width: 76px; height: 76px; background: var(--green-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.875rem; margin: 0 auto 1rem; border: 3px solid #86efac; }
+    .confirm-title { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 0.4rem; }
+    .confirm-sub { font-size: 0.875rem; color: var(--text-muted); }
+    .confirm-card { background: var(--off-white); border-radius: var(--radius); padding: 1.375rem; margin-bottom: 1.375rem; }
+    .confirm-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--gray-200); font-size: 0.875rem; }
+    .confirm-row:last-child { border-bottom: none; }
+    .cr-label { color: var(--text-muted); font-weight: 500; flex-shrink: 0; }
+    .cr-value { color: var(--text); font-weight: 600; text-align: right; }
+    .payment-notice {
+      background: var(--orange-pale); border: 1px solid #fed7aa; border-radius: var(--radius);
+      padding: 0.875rem 1.125rem; font-size: 0.85rem; color: #9a3412;
+      margin-bottom: 1.375rem; display: flex; gap: 0.625rem; align-items: flex-start;
+    }
+    .confirm-actions { display: flex; flex-direction: column; gap: 0.625rem; }
+    .ca-btn {
+      width: 100%; padding: 0.825rem; border-radius: 8px; font-weight: 700; font-size: 0.875rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      cursor: pointer; border: 1.5px solid transparent; transition: all var(--t);
+    }
+    .ca-primary   { background: var(--orange); color: var(--white); border-color: var(--orange); }
+    .ca-primary:hover   { background: var(--orange-dark); border-color: var(--orange-dark); }
+    .ca-secondary { background: var(--white); color: var(--navy); border-color: var(--gray-200); }
+    .ca-secondary:hover { border-color: var(--navy); }
+    .ca-ghost { background: var(--white); color: var(--text-muted); border-color: var(--gray-200); }
+    .ca-ghost:hover { color: var(--text); border-color: var(--gray-300); }
+
+    /* ==========================================
+       SCROLL REVEAL
+    ========================================== */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.1s; }
+    .reveal-d2 { transition-delay: 0.2s; }
+    .reveal-d3 { transition-delay: 0.3s; }
+    .reveal-d4 { transition-delay: 0.4s; }
+    .reveal-d5 { transition-delay: 0.5s; }
+
+    /* ==========================================
+       MISC UTILS
+    ========================================== */
+    .mt-2 { margin-top: 1rem; }
+    .mt-3 { margin-top: 1.5rem; }
+    .error-msg { font-size: 0.8rem; color: #ef4444; margin-top: 0.5rem; display: none; }
+    .error-msg.show { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="main-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Tuscany Basketball Camp home">
+        <div class="nav-logo-icon">🏀</div>
+        <div class="nav-logo-text">
+          Tuscany Basketball
+          <span>Summer Camp 2025</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <button class="btn btn-primary" onclick="openModal()" aria-label="Open registration">Reserve a Spot</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero" class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-ring" aria-hidden="true"></div>
+
+  <!-- Animated basketball decoration -->
+  <svg class="hero-ball-deco" aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#ea580c"/>
+    <path d="M50 2 Q78 26 78 50 Q78 74 50 98" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="3.5"/>
+    <path d="M50 2 Q22 26 22 50 Q22 74 50 98" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="3.5"/>
+    <path d="M2 50 Q26 36 50 36 Q74 36 98 50" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="3.5"/>
+    <path d="M2 50 Q26 64 50 64 Q74 64 98 50" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="3"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Now Enrolling — Summer 2025
+      </div>
+
+      <h1 class="hero-title">
+        Tuscany<br>
+        <span class="accent">Basketball</span><br>
+        Camp
+      </h1>
+
+      <p class="hero-sub">
+        Give your child a summer of structured skill-building, real confidence, and genuine teamwork — guided by experienced, CPR-certified coaches in a safe, inclusive environment at Calgary's Tuscany Club.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn btn-primary btn-lg" onclick="openModal()">
+          🏀 Reserve a Spot
+        </button>
+        <a href="#schedule" class="btn btn-secondary btn-lg">See the Schedule</a>
+      </div>
+
+      <div class="hero-checks">
+        <div class="hero-check">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Ages 7–15
+        </div>
+        <div class="hero-check">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          CPR-Certified Coaches
+        </div>
+        <div class="hero-check">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          July – August 15
+        </div>
+        <div class="hero-check">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Calgary, AB
+        </div>
+      </div>
+
+      <div class="hero-urgency" role="alert">
+        <span aria-hidden="true">⚡</span>
+        <span><strong>Limited spots available</strong> — only 12 per age group. Don't miss out.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST BAR ===================== -->
+<div class="trust-bar" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item reveal">
+        <div class="trust-icon" aria-hidden="true">🩺</div>
+        Red Cross CPR Trained
+      </div>
+      <div class="trust-item reveal reveal-d1">
+        <div class="trust-icon" aria-hidden="true">🏅</div>
+        Registered for Team Sports
+      </div>
+      <div class="trust-item reveal reveal-d2">
+        <div class="trust-icon" aria-hidden="true">🌍</div>
+        Inclusive Environment
+      </div>
+      <div class="trust-item reveal reveal-d3">
+        <div class="trust-icon" aria-hidden="true">👨‍🏫</div>
+        Experienced Coaches
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section-pad-lg">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">What Your Child Will Learn</div>
+      <h2 class="display-md" style="color:var(--navy)">Skills That Build Real Confidence</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;margin-top:0.875rem;line-height:1.75;">Every session is structured around measurable skill progression — not just free play. Your child will leave summer stronger, smarter, and more confident on and off the court.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">🏀</div>
+        <div class="skill-title">Ball Handling &amp; Dribbling</div>
+        <p class="skill-desc">From basic control to advanced handles, players develop the foundation every great game starts with — building dexterity, coordination, and instinct under pressure.</p>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-icon" aria-hidden="true">🎯</div>
+        <div class="skill-title">Shooting Mechanics</div>
+        <p class="skill-desc">Proper form, footwork, and repetition. Coaches identify and correct individual habits so players build a consistent, repeatable shot they can rely on in any game.</p>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-icon" aria-hidden="true">🛡️</div>
+        <div class="skill-title">Defensive Fundamentals</div>
+        <p class="skill-desc">Positioning, footwork, and on-ball defence. Players learn why defence wins games and how to take pride in the effort that doesn't always show up in the highlight reel.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">🧠</div>
+        <div class="skill-title">Game IQ &amp; Basketball Awareness</div>
+        <p class="skill-desc">Reading the floor, understanding spacing, and making smart decisions quickly. Game intelligence is a skill — and it's one we deliberately teach in every session.</p>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-icon" aria-hidden="true">🤝</div>
+        <div class="skill-title">Teamwork &amp; Communication</div>
+        <p class="skill-desc">Basketball is the ultimate team sport. Players practice calling out plays, supporting each other, and learning what it means to make everyone around them better.</p>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-icon" aria-hidden="true">⭐</div>
+        <div class="skill-title">Confidence &amp; Leadership</div>
+        <p class="skill-desc">The skills learned on this court transfer beyond basketball. We build young athletes who lead by example, handle setbacks with resilience, and grow every session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SCHEDULE ===================== -->
+<section id="schedule" class="schedule-section section-pad-lg">
+  <div class="container">
+    <div class="section-header center reveal" style="position:relative;z-index:1;">
+      <div class="section-label">Program Structure</div>
+      <h2 class="display-md" style="color:var(--white)">Designed for Skill. Built for Summer.</h2>
+      <p style="color:rgba(255,255,255,0.6);font-size:1.05rem;margin-top:0.875rem;line-height:1.75;">Consistent, structured sessions that build on each other week-over-week — not one-off events.</p>
+    </div>
+
+    <div class="schedule-stats">
+      <div class="stat-card reveal">
+        <div class="stat-num">90</div>
+        <div class="stat-unit">minutes</div>
+        <div class="stat-label">Per Session</div>
+        <div class="stat-detail">Enough time for real skill work without losing focus</div>
+      </div>
+      <div class="stat-card reveal reveal-d1">
+        <div class="stat-num">2×</div>
+        <div class="stat-unit">per week</div>
+        <div class="stat-label">Frequency</div>
+        <div class="stat-detail">Consistent repetition is how skills are built and retained</div>
+      </div>
+      <div class="stat-card reveal reveal-d2">
+        <div class="stat-num">6+</div>
+        <div class="stat-unit">weeks</div>
+        <div class="stat-label">July – Aug 15</div>
+        <div class="stat-detail">Enough time to see measurable improvement this summer</div>
+      </div>
+      <div class="stat-card reveal reveal-d3">
+        <div class="stat-num">12</div>
+        <div class="stat-unit">spots max</div>
+        <div class="stat-label">Per Age Group</div>
+        <div class="stat-detail">Small groups mean personalized coaching for every child</div>
+      </div>
+    </div>
+
+    <div class="age-groups">
+      <div class="age-group-card reveal">
+        <div class="age-tag">Junior Group</div>
+        <div class="age-title">Ages 7–10</div>
+        <p class="age-desc">Our junior program focuses on foundational movement, fun game-based drills, and building a genuine love for the sport. Sessions are structured to match shorter attention spans while delivering real skill progress.</p>
+      </div>
+      <div class="age-group-card reveal reveal-d2">
+        <div class="age-tag">Senior Group</div>
+        <div class="age-title">Ages 11–15</div>
+        <p class="age-desc">More advanced skill work, tactical awareness, and competitive drills. Older players push each other to a higher standard with coaching that challenges them to elevate every aspect of their game.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COACHES ===================== -->
+<section id="coaches" class="section-pad-lg">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Your Coaches</div>
+      <h2 class="display-md" style="color:var(--navy)">Experienced. Certified. Passionate.</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;margin-top:0.875rem;line-height:1.75;">Your child's development is in capable hands — coaches who care about more than just the score.</p>
+    </div>
+
+    <div class="coaches-grid">
+      <div class="coach-card reveal">
+        <div class="coach-photo coach-photo-nathan" role="img" aria-label="Coach Nathan">
+          <div class="coach-initials">N</div>
+          <div class="coach-role-badge">Head Coach</div>
+        </div>
+        <div class="coach-info">
+          <div class="coach-name">Nathan</div>
+          <div class="coach-title">Head Coach &amp; Program Director</div>
+          <p class="coach-bio">Nathan brings a player-first coaching philosophy built over years of working with youth athletes across Calgary. His sessions balance high energy with structured learning, ensuring every child leaves feeling accomplished — not just busy. He specializes in making technique accessible and fun across all skill levels.</p>
+          <div class="coach-creds">
+            <span class="cred-pill">🩺 Red Cross CPR</span>
+            <span class="cred-pill">🏅 Registered Team Sports</span>
+            <span class="cred-pill">Youth Coaching Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-card reveal reveal-d2">
+        <div class="coach-photo coach-photo-josh" role="img" aria-label="Coach Josh">
+          <div class="coach-initials">J</div>
+          <div class="coach-role-badge">Assistant Coach</div>
+        </div>
+        <div class="coach-info">
+          <div class="coach-name">Coach Josh</div>
+          <div class="coach-title">Skills Coach &amp; Camp Coordinator</div>
+          <p class="coach-bio">Coach Josh is an enthusiastic and encouraging presence on the court. He has a gift for connecting with kids — especially those who are new to the sport — and helping them build confidence alongside their skills. His energy keeps sessions engaging and his attention to detail makes technical feedback land in a way kids actually understand.</p>
+          <div class="coach-creds">
+            <span class="cred-pill">🩺 Red Cross CPR</span>
+            <span class="cred-pill">🏅 Registered Team Sports</span>
+            <span class="cred-pill">Player Development Focus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SAFETY ===================== -->
+<section id="safety" class="safety-section section-pad">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label" style="background:var(--green-pale);color:var(--green)">Safety &amp; Compliance</div>
+      <h2 class="display-md" style="color:var(--navy)">Your Child's Safety Is Our Priority</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;margin-top:0.875rem;line-height:1.75;">We maintain the standards that give parents confidence to drop off and actually relax.</p>
+    </div>
+
+    <div class="safety-grid">
+      <div class="safety-item reveal">
+        <div class="safety-icon-wrap" aria-hidden="true">🩺</div>
+        <div class="safety-title">Red Cross CPR Trained</div>
+        <p class="safety-desc">All coaches hold current Red Cross CPR certification, so emergency response is always at hand.</p>
+      </div>
+      <div class="safety-item reveal reveal-d1">
+        <div class="safety-icon-wrap" aria-hidden="true">🏅</div>
+        <div class="safety-title">Registered for Team Sports</div>
+        <p class="safety-desc">The program is properly registered, meeting all local sport organization requirements for organized youth activities.</p>
+      </div>
+      <div class="safety-item reveal reveal-d2">
+        <div class="safety-icon-wrap" aria-hidden="true">👁️</div>
+        <div class="safety-title">Supervised at All Times</div>
+        <p class="safety-desc">Strict coach-to-player ratios ensure every child is visible and supported throughout every session.</p>
+      </div>
+      <div class="safety-item reveal reveal-d3">
+        <div class="safety-icon-wrap" aria-hidden="true">📋</div>
+        <div class="safety-title">Medical Info Collected</div>
+        <p class="safety-desc">We collect medical notes, allergies, and emergency contacts at registration so we're always prepared.</p>
+      </div>
+    </div>
+
+    <div class="inclusion-box reveal">
+      <div class="inclusion-icon" aria-hidden="true">🌍</div>
+      <div class="inclusion-title">Zero Tolerance for Exclusion or Discrimination</div>
+      <p class="inclusion-text">Tuscany Basketball Camp is committed to maintaining an inclusive, welcoming environment for every child, regardless of background, ability, ethnicity, or experience level. We have a strict zero-tolerance policy for bullying, exclusion, or discrimination of any kind. Every child who walks through our doors deserves to feel safe, respected, and valued.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section id="pricing" class="section-pad-lg" style="background:var(--off-white)">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Pricing</div>
+      <h2 class="display-md" style="color:var(--navy)">Simple, Transparent Pricing</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;margin-top:0.875rem;line-height:1.75;">Invest in a summer your child will actually remember. Payment is confirmed after spot availability is verified.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-plan">Early Bird</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-amount">249</span>
+        </div>
+        <div class="pricing-period">CAD per child / full camp</div>
+        <p class="pricing-note">Register by <strong>June 30, 2025</strong> to lock in this rate.</p>
+        <div class="pricing-features">
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> 12+ sessions (90 min each)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Both age groups (7–10 or 11–15)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Small group coaching (max 12)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Progress tracked session-to-session</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> CPR-certified coaches</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Inclusive, supervised environment</div>
+        </div>
+        <button class="btn btn-outline btn-full" onclick="openModal()">Reserve Early Bird Spot</button>
+      </div>
+
+      <div class="pricing-card featured reveal reveal-d2">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-plan">Regular Rate</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-amount">299</span>
+        </div>
+        <div class="pricing-period">CAD per child / full camp</div>
+        <p class="pricing-note">Available after June 30 or while spots remain.</p>
+        <div class="pricing-features">
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> 12+ sessions (90 min each)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Both age groups (7–10 or 11–15)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Small group coaching (max 12)</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Progress tracked session-to-session</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> CPR-certified coaches</div>
+          <div class="pricing-feature"><div class="feat-check" aria-hidden="true">✓</div> Inclusive, supervised environment</div>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="openModal()">Reserve a Spot</button>
+      </div>
+    </div>
+
+    <div class="spots-bar reveal">
+      <strong>⚡ Only 12 spots per age group.</strong> Once they're gone, registration closes. Don't wait.
+    </div>
+    <p class="pricing-footer-note reveal">💳 <strong>No payment required today.</strong> A payment link will be sent after we confirm your availability and spot. All prices in CAD.</p>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials" class="testimonials-section section-pad">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">What Parents Say</div>
+      <h2 class="display-md" style="color:var(--navy)">Families Who Showed Up</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="t-quote">"My daughter was nervous about joining a new camp where she didn't know anyone. Within the first week she came home excited to practice in the driveway. The coaches create such a welcoming atmosphere — she felt included from day one."</p>
+        <div class="t-author">
+          <div class="t-avatar" style="background:#1e3a5f" aria-hidden="true">SL</div>
+          <div>
+            <div class="t-name">Sarah L.</div>
+            <div class="t-meta">Parent of Emma, age 9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d2">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="t-quote">"We've tried other summer sports programs in Calgary. The difference here is the coaching quality and the ratio — coaches actually know each kid's name and their specific areas to work on. Our son's shooting improved noticeably within a few sessions."</p>
+        <div class="t-author">
+          <div class="t-avatar" style="background:#7c2d12" aria-hidden="true">MT</div>
+          <div>
+            <div class="t-name">Michael T.</div>
+            <div class="t-meta">Parent of Marcus, age 13</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d4">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="t-quote">"As a parent, what sold me was the safety piece — CPR-trained coaches and knowing the program is properly registered. But what kept us coming back was how happy and confident our daughter became. It's genuinely the best summer program we've found."</p>
+        <div class="t-author">
+          <div class="t-avatar" style="background:#166534" aria-hidden="true">AR</div>
+          <div>
+            <div class="t-name">Amanda R.</div>
+            <div class="t-meta">Parent of Sofia, age 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="testimonial-disclaimer">* Testimonials represent early participant feedback and will be updated as we collect reviews from the Summer 2025 program.</p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Questions Answered</div>
+      <h2 class="display-md" style="color:var(--navy)">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What age groups does the camp offer?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">We have two dedicated age groups: <strong>Ages 7–10 (Junior)</strong> and <strong>Ages 11–15 (Senior)</strong>. Each group has its own sessions, coaching style, and skill focus — so sessions are always developmentally appropriate. Both groups share the same inclusive values and coaching quality.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          When and where are sessions held?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Sessions run from <strong>July through August 15, 2025</strong>, twice per week. Each session is 90 minutes. Exact days and time slots (morning or afternoon) are selected during registration based on your preference and group availability. All sessions are held at <strong>Tuscany Club</strong>, Calgary, AB — address will be confirmed in your registration email.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are the coaches qualified and background-checked?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Yes. Both coaches — Nathan and Coach Josh — are <strong>Red Cross CPR certified</strong> and the program is <strong>registered for team sports</strong> in Calgary. We take athlete safety and professional standards seriously.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Does my child need prior experience?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">No experience required — and we mean it. Our program is designed to welcome beginners and give experienced players a challenge at the same time. Coaches are skilled at differentiating within groups so every child feels appropriately challenged and supported.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much does the camp cost?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Early Bird pricing is <strong>$249 CAD</strong> (register by June 30, 2025). Regular pricing is <strong>$299 CAD</strong>. For context, comparable structured youth skill camps in Calgary typically range from $200–$450 for multi-week summer programs. Our pricing reflects the small group size, certified coaches, and multi-week structure. A payment link is sent after we confirm your spot — no payment required at registration.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What should my child bring to each session?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <ul style="padding-left:1.25rem;list-style:disc;display:flex;flex-direction:column;gap:0.375rem;">
+              <li>Athletic shoes with non-marking soles (indoor court shoes strongly recommended)</li>
+              <li>Comfortable athletic clothing</li>
+              <li>Water bottle — staying hydrated is important</li>
+              <li>A basketball of their own is a bonus, but not required (we have camp equipment)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is the camp truly inclusive? What is your discrimination policy?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Absolutely. We have a <strong>zero-tolerance policy for exclusion, bullying, or discrimination</strong> of any kind. This applies to coaches, players, and parents. Every child — regardless of skill level, background, ethnicity, or experience — is welcomed, included, and supported. If any incident arises, it is addressed immediately with full seriousness.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is the cancellation and refund policy?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Since payment is collected after confirmation, cancellations before payment incur no charge. Once payment is processed, please reach out directly to discuss your situation — we handle each case with common sense and fairness. Refund details will be included in your confirmation email.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I register?
+          <span class="faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Click any <strong>"Reserve a Spot"</strong> button on this page to open our quick 4-step registration form. You'll choose your child's age group, preferred session days and time, and provide parent and emergency contact information. We'll follow up to confirm availability and send payment details.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOCATION ===================== -->
+<section id="location" class="location-section section-pad">
+  <div class="container">
+    <div class="location-grid">
+      <div class="reveal">
+        <div class="section-label">Find Us</div>
+        <h2 class="location-heading">At the Tuscany Club</h2>
+
+        <div class="location-row">
+          <div class="loc-icon" aria-hidden="true">📍</div>
+          <div class="loc-text">
+            <strong>Tuscany Club (Indoor Gym)</strong>
+            <span>11 Tuscany Valley Crescent NW<br>Calgary, AB T3L 0A1<br><em style="color:var(--orange);font-size:0.78rem;">(Placeholder — confirm exact address at registration)</em></span>
+          </div>
+        </div>
+
+        <div class="location-row">
+          <div class="loc-icon" aria-hidden="true">🕐</div>
+          <div class="loc-text">
+            <strong>Session Times</strong>
+            <span>Morning: 9:00 AM – 10:30 AM<br>Afternoon: 2:00 PM – 3:30 PM<br>Select your preference during registration</span>
+          </div>
+        </div>
+
+        <div class="location-row">
+          <div class="loc-icon" aria-hidden="true">🚗</div>
+          <div class="loc-text">
+            <strong>Parking</strong>
+            <span>Free parking available at the Tuscany Club facility. Drop-off and pick-up area clearly marked.</span>
+          </div>
+        </div>
+
+        <div class="location-row">
+          <div class="loc-icon" aria-hidden="true">📞</div>
+          <div class="loc-text">
+            <strong>Questions?</strong>
+            <span>Email us after registering or reach out through the confirmation form.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d2">
+        <div class="map-placeholder" role="img" aria-label="Map placeholder — Tuscany Club, Calgary">
+          <div class="map-p-title">Tuscany Club, Calgary NW</div>
+          <p class="map-p-sub">Exact address and Google Maps link will be included in your registration confirmation.</p>
+          <a class="map-link" href="https://maps.google.com/?q=Tuscany+Club+Calgary+NW" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final-cta section-pad-lg">
+  <div class="container">
+    <div class="final-cta-content reveal">
+      <div class="section-label">Don't Wait</div>
+      <h2 class="display-lg">Ready to Reserve Your Child's Spot?</h2>
+      <p>Only 12 spots per age group. Registration takes less than 3 minutes and no payment is required today.</p>
+      <button class="btn btn-primary btn-lg" onclick="openModal()">🏀 Reserve a Spot Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" aria-label="Tuscany Basketball Camp">
+          <div class="nav-logo-icon">🏀</div>
+          <div class="nav-logo-text">
+            Tuscany Basketball
+            <span>Summer Camp 2025</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Building confident, skilled young athletes in Calgary's Tuscany community. Ages 7–15. July – August 15, 2025.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#schedule" class="footer-link">Schedule</a>
+        <a href="#coaches" class="footer-link">Coaches</a>
+        <a href="#safety" class="footer-link">Safety</a>
+        <a href="#pricing" class="footer-link">Pricing</a>
+        <a href="#faq" class="footer-link">FAQ</a>
+        <a href="#location" class="footer-link">Location</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Tuscany Basketball Camp. Calgary, AB. All rights reserved.</p>
+      <p class="footer-copy" style="color:rgba(255,255,255,0.3)">Questions? Email us after registration.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== MOBILE STICKY CTA ===================== -->
+<div class="mobile-cta" id="mobile-cta" role="complementary" aria-label="Reserve a spot">
+  <div class="mobile-cta-info">
+    <strong>Tuscany Basketball Camp</strong>
+    Only 12 spots per age group
+  </div>
+  <button class="btn btn-primary" onclick="openModal()">Reserve a Spot</button>
+</div>
+
+<!-- ===================== REGISTRATION MODAL ===================== -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleOverlayClick(event)">
+  <div class="modal-box" id="modal-box">
+
+    <!-- Header (sticky) -->
+    <div class="modal-header">
+      <div class="modal-progress" aria-label="Registration progress">
+        <div class="prog-step active" id="prog-1" aria-label="Step 1"></div>
+        <div class="prog-step" id="prog-2" aria-label="Step 2"></div>
+        <div class="prog-step" id="prog-3" aria-label="Step 3"></div>
+        <div class="prog-step" id="prog-4" aria-label="Step 4"></div>
+      </div>
+      <div class="modal-top">
+        <div>
+          <div class="modal-title" id="modal-title">Choose Age Group</div>
+          <div class="modal-sub" id="modal-sub">Step 1 of 3 — Quick 3-minute registration</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal()" aria-label="Close registration">✕</button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="modal-body">
+
+      <!-- STEP 1: Age Group -->
+      <div class="step active" id="step-1">
+        <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1.5rem;line-height:1.7;">Select the age group that best matches your child. Each group has dedicated sessions, coaching, and a curriculum designed for their stage of development.</p>
+        <div class="age-opts">
+          <label class="age-opt">
+            <input type="radio" name="age-group" value="7-10" id="ag-junior">
+            <div class="age-opt-lbl">
+              <div class="age-opt-emoji">🧒</div>
+              <div class="age-opt-title">Ages 7–10</div>
+              <div class="age-opt-desc">Junior Group</div>
+            </div>
+          </label>
+          <label class="age-opt">
+            <input type="radio" name="age-group" value="11-15" id="ag-senior">
+            <div class="age-opt-lbl">
+              <div class="age-opt-emoji">🏃</div>
+              <div class="age-opt-title">Ages 11–15</div>
+              <div class="age-opt-desc">Senior Group</div>
+            </div>
+          </label>
+        </div>
+        <div class="error-msg" id="err-step1">Please select an age group to continue.</div>
+      </div>
+
+      <!-- STEP 2: Days & Time -->
+      <div class="step" id="step-2">
+        <div class="field-label-sm">Select your 2 preferred session days</div>
+        <div class="day-opts">
+          <label class="day-opt">
+            <input type="checkbox" name="days" value="Monday">
+            <div class="day-opt-lbl"><span class="day-abbr">Mon</span><span class="day-full">Monday</span></div>
+          </label>
+          <label class="day-opt">
+            <input type="checkbox" name="days" value="Tuesday">
+            <div class="day-opt-lbl"><span class="day-abbr">Tue</span><span class="day-full">Tuesday</span></div>
+          </label>
+          <label class="day-opt">
+            <input type="checkbox" name="days" value="Wednesday">
+            <div class="day-opt-lbl"><span class="day-abbr">Wed</span><span class="day-full">Wednesday</span></div>
+          </label>
+          <label class="day-opt">
+            <input type="checkbox" name="days" value="Thursday">
+            <div class="day-opt-lbl"><span class="day-abbr">Thu</span><span class="day-full">Thursday</span></div>
+          </label>
+          <label class="day-opt">
+            <input type="checkbox" name="days" value="Friday">
+            <div class="day-opt-lbl"><span class="day-abbr">Fri</span><span class="day-full">Friday</span></div>
+          </label>
+        </div>
+        <div class="error-msg" id="err-days">Please select exactly 2 preferred days.</div>
+
+        <div class="field-label-sm">Preferred session time</div>
+        <div class="time-opts">
+          <label class="time-opt">
+            <input type="radio" name="session-time" value="Morning (9:00 AM – 10:30 AM)">
+            <div class="time-opt-lbl">
+              <div class="time-title">☀️ Morning</div>
+              <div class="time-range">9:00 AM – 10:30 AM</div>
+            </div>
+          </label>
+          <label class="time-opt">
+            <input type="radio" name="session-time" value="Afternoon (2:00 PM – 3:30 PM)">
+            <div class="time-opt-lbl">
+              <div class="time-title">🌤 Afternoon</div>
+              <div class="time-range">2:00 PM – 3:30 PM</div>
+            </div>
+          </label>
+        </div>
+        <div class="error-msg" id="err-time">Please select a preferred session time.</div>
+      </div>
+
+      <!-- STEP 3: Contact Info -->
+      <div class="step" id="step-3">
+
+        <div class="form-section-hdr">Child Information</div>
+        <div class="form-row-2">
+          <div class="form-grp">
+            <label class="form-lbl" for="child-first">First Name <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="child-first" placeholder="Emma" autocomplete="given-name">
+            <span class="form-err" id="err-child-first">Required</span>
+          </div>
+          <div class="form-grp">
+            <label class="form-lbl" for="child-last">Last Name <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="child-last" placeholder="Smith" autocomplete="family-name">
+            <span class="form-err" id="err-child-last">Required</span>
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-grp">
+            <label class="form-lbl" for="child-dob">Date of Birth <span class="req">*</span></label>
+            <input class="form-inp" type="date" id="child-dob">
+            <span class="form-err" id="err-child-dob">Required</span>
+          </div>
+          <div class="form-grp">
+            <label class="form-lbl" for="child-shirt">T-Shirt Size</label>
+            <select class="form-inp" id="child-shirt">
+              <option value="">Select size</option>
+              <option>Youth XS (4–5)</option>
+              <option>Youth S (6–8)</option>
+              <option>Youth M (10–12)</option>
+              <option>Youth L (14–16)</option>
+              <option>Adult S</option>
+              <option>Adult M</option>
+              <option>Adult L</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-hdr">Parent / Guardian Information</div>
+        <div class="form-row-2">
+          <div class="form-grp">
+            <label class="form-lbl" for="parent-first">First Name <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="parent-first" placeholder="Sarah" autocomplete="given-name">
+            <span class="form-err" id="err-parent-first">Required</span>
+          </div>
+          <div class="form-grp">
+            <label class="form-lbl" for="parent-last">Last Name <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="parent-last" placeholder="Smith" autocomplete="family-name">
+            <span class="form-err" id="err-parent-last">Required</span>
+          </div>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="parent-email">Email Address <span class="req">*</span></label>
+          <input class="form-inp" type="email" id="parent-email" placeholder="sarah@example.com" autocomplete="email">
+          <span class="form-err" id="err-parent-email">Please enter a valid email</span>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="parent-phone">Phone Number <span class="req">*</span></label>
+          <input class="form-inp" type="tel" id="parent-phone" placeholder="(403) 555-0100" autocomplete="tel">
+          <span class="form-err" id="err-parent-phone">Required</span>
+        </div>
+
+        <div class="form-section-hdr">Emergency Contact</div>
+        <div class="form-row-2">
+          <div class="form-grp">
+            <label class="form-lbl" for="emerg-name">Full Name <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="emerg-name" placeholder="John Smith">
+            <span class="form-err" id="err-emerg-name">Required</span>
+          </div>
+          <div class="form-grp">
+            <label class="form-lbl" for="emerg-rel">Relationship <span class="req">*</span></label>
+            <input class="form-inp" type="text" id="emerg-rel" placeholder="Father / Grandmother...">
+            <span class="form-err" id="err-emerg-rel">Required</span>
+          </div>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="emerg-phone">Emergency Phone <span class="req">*</span></label>
+          <input class="form-inp" type="tel" id="emerg-phone" placeholder="(403) 555-0199">
+          <span class="form-err" id="err-emerg-phone">Required</span>
+        </div>
+
+        <div class="form-section-hdr">Medical Notes</div>
+        <div class="form-grp">
+          <label class="form-lbl" for="medical-notes">Allergies, medical conditions, or anything coaches should know</label>
+          <textarea class="form-inp" id="medical-notes" placeholder="e.g. peanut allergy, asthma inhaler required, or 'none'"></textarea>
+        </div>
+
+      </div>
+
+      <!-- STEP 4: Confirmation -->
+      <div class="step" id="step-4">
+        <div class="confirm-hdr">
+          <div class="confirm-icon" aria-hidden="true">✅</div>
+          <div class="confirm-title">You're Registered!</div>
+          <p class="confirm-sub">Your spot request has been saved. We'll confirm availability and send a payment link shortly.</p>
+        </div>
+
+        <div class="confirm-card" id="confirm-summary">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="payment-notice">
+          <span aria-hidden="true">💳</span>
+          <span><strong>Payment link will be sent after we confirm availability.</strong> No payment is required at this time. You'll receive next steps by email within 1–2 business days.</span>
+        </div>
+
+        <div class="confirm-actions">
+          <button class="ca-btn ca-primary" id="btn-mailto-parent">
+            📧 Email Confirmation to Myself
+          </button>
+          <button class="ca-btn ca-secondary" id="btn-mailto-camp">
+            📬 Send Copy to Camp Organizer
+          </button>
+          <button class="ca-btn ca-ghost" id="btn-copy-confirm">
+            📋 Copy Confirmation Details
+          </button>
+        </div>
+      </div>
+
+    </div><!-- end modal-body -->
+
+    <!-- Footer nav -->
+    <div class="modal-footer">
+      <button class="btn btn-outline btn-sm" id="btn-back" onclick="stepBack()" style="display:none">← Back</button>
+      <div style="flex:1"></div>
+      <button class="btn btn-primary" id="btn-next" onclick="stepNext()">Next Step →</button>
+    </div>
+
+  </div><!-- end modal-box -->
+</div><!-- end modal-overlay -->
+
+
+<script>
+  /* ==============================================
+     SCROLL REVEAL
+  ============================================== */
+  (function () {
+    const els = document.querySelectorAll('.reveal');
+    if (!els.length) return;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(el => obs.observe(el));
+  })();
+
+  /* ==============================================
+     NAV SCROLL EFFECT
+  ============================================== */
+  (function () {
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+  })();
+
+  /* ==============================================
+     MOBILE STICKY CTA
+  ============================================== */
+  (function () {
+    const cta = document.getElementById('mobile-cta');
+    const hero = document.getElementById('hero');
+    if (!cta || !hero) return;
+    const obs = new IntersectionObserver((entries) => {
+      cta.classList.toggle('show', !entries[0].isIntersecting);
+    }, { threshold: 0 });
+    obs.observe(hero);
+  })();
+
+  /* ==============================================
+     FAQ ACCORDION
+  ============================================== */
+  (function () {
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+
+  /* ==============================================
+     MODAL WIZARD
+  ============================================== */
+  let currentStep = 1;
+  const TOTAL_STEPS = 4;
+
+  function openModal() {
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    goToStep(1);
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function goToStep(n) {
+    currentStep = n;
+    // Hide all steps
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step-' + n).classList.add('active');
+
+    // Progress indicators
+    for (let i = 1; i <= TOTAL_STEPS; i++) {
+      const p = document.getElementById('prog-' + i);
+      if (i < n) { p.className = 'prog-step done'; }
+      else if (i === n) { p.className = 'prog-step active'; }
+      else { p.className = 'prog-step'; }
+    }
+
+    // Header text
+    const titles = ['', 'Choose Age Group', 'Preferred Days & Time', 'Your Information', 'You\'re All Set!'];
+    const subs   = ['', 'Step 1 of 3 — Select your child\'s age group', 'Step 2 of 3 — Choose your schedule preferences', 'Step 3 of 3 — Parent, child, and emergency contact', 'Registration complete!'];
+    document.getElementById('modal-title').textContent = titles[n];
+    document.getElementById('modal-sub').textContent   = subs[n];
+
+    // Back / Next buttons
+    const btnBack = document.getElementById('btn-back');
+    const btnNext = document.getElementById('btn-next');
+    btnBack.style.display = (n > 1 && n < TOTAL_STEPS) ? 'inline-flex' : 'none';
+    if (n === TOTAL_STEPS) {
+      btnNext.style.display = 'none';
+    } else {
+      btnNext.style.display = 'inline-flex';
+      btnNext.textContent = n === 3 ? '✓ Submit Registration' : 'Next Step →';
+    }
+
+    // Scroll modal to top
+    document.getElementById('modal-box').scrollTop = 0;
+  }
+
+  function stepBack() { if (currentStep > 1) goToStep(currentStep - 1); }
+
+  function stepNext() {
+    if (!validateStep(currentStep)) return;
+    if (currentStep === 3) {
+      submitRegistration();
+    } else {
+      goToStep(currentStep + 1);
+    }
+  }
+
+  /* ---------- Validation ---------- */
+  function validateStep(step) {
+    if (step === 1) {
+      const checked = document.querySelector('input[name="age-group"]:checked');
+      const err = document.getElementById('err-step1');
+      if (!checked) { err.classList.add('show'); return false; }
+      err.classList.remove('show');
+      return true;
+    }
+
+    if (step === 2) {
+      const days = document.querySelectorAll('input[name="days"]:checked');
+      const time = document.querySelector('input[name="session-time"]:checked');
+      const errD = document.getElementById('err-days');
+      const errT = document.getElementById('err-time');
+      let ok = true;
+      if (days.length < 1 || days.length > 2) { errD.classList.add('show'); ok = false; } else { errD.classList.remove('show'); }
+      if (!time) { errT.classList.add('show'); ok = false; } else { errT.classList.remove('show'); }
+      return ok;
+    }
+
+    if (step === 3) {
+      const fields = [
+        { id: 'child-first',   errId: 'err-child-first',   test: v => v.trim().length > 0 },
+        { id: 'child-last',    errId: 'err-child-last',    test: v => v.trim().length > 0 },
+        { id: 'child-dob',     errId: 'err-child-dob',     test: v => v.trim().length > 0 },
+        { id: 'parent-first',  errId: 'err-parent-first',  test: v => v.trim().length > 0 },
+        { id: 'parent-last',   errId: 'err-parent-last',   test: v => v.trim().length > 0 },
+        { id: 'parent-email',  errId: 'err-parent-email',  test: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+        { id: 'parent-phone',  errId: 'err-parent-phone',  test: v => v.trim().length >= 7 },
+        { id: 'emerg-name',    errId: 'err-emerg-name',    test: v => v.trim().length > 0 },
+        { id: 'emerg-rel',     errId: 'err-emerg-rel',     test: v => v.trim().length > 0 },
+        { id: 'emerg-phone',   errId: 'err-emerg-phone',   test: v => v.trim().length >= 7 },
+      ];
+      let ok = true;
+      fields.forEach(f => {
+        const inp = document.getElementById(f.id);
+        const err = document.getElementById(f.errId);
+        if (!f.test(inp.value)) {
+          inp.classList.add('err');
+          err.classList.add('show');
+          ok = false;
+        } else {
+          inp.classList.remove('err');
+          err.classList.remove('show');
+        }
+      });
+      return ok;
+    }
+
+    return true;
+  }
+
+  /* ---------- Submit ---------- */
+  function submitRegistration() {
+    const ageGroup   = document.querySelector('input[name="age-group"]:checked').value;
+    const days       = Array.from(document.querySelectorAll('input[name="days"]:checked')).map(d => d.value);
+    const sessionTime = document.querySelector('input[name="session-time"]:checked').value;
+    const childFirst  = document.getElementById('child-first').value.trim();
+    const childLast   = document.getElementById('child-last').value.trim();
+    const childDob    = document.getElementById('child-dob').value;
+    const childShirt  = document.getElementById('child-shirt').value;
+    const parentFirst = document.getElementById('parent-first').value.trim();
+    const parentLast  = document.getElementById('parent-last').value.trim();
+    const parentEmail = document.getElementById('parent-email').value.trim();
+    const parentPhone = document.getElementById('parent-phone').value.trim();
+    const emergName   = document.getElementById('emerg-name').value.trim();
+    const emergRel    = document.getElementById('emerg-rel').value.trim();
+    const emergPhone  = document.getElementById('emerg-phone').value.trim();
+    const medNotes    = document.getElementById('medical-notes').value.trim() || 'None';
+
+    const refId = 'TBC-' + Date.now().toString(36).toUpperCase();
+    const timestamp = new Date().toLocaleString('en-CA', { timeZone: 'America/Edmonton' });
+
+    const reg = {
+      refId, timestamp, ageGroup,
+      preferredDays: days.join(' & '),
+      sessionTime,
+      child: { first: childFirst, last: childLast, dob: childDob, shirt: childShirt || 'Not specified' },
+      parent: { first: parentFirst, last: parentLast, email: parentEmail, phone: parentPhone },
+      emergency: { name: emergName, relationship: emergRel, phone: emergPhone },
+      medicalNotes: medNotes,
+    };
+
+    // Save to localStorage
+    const existing = JSON.parse(localStorage.getItem('tuscany_registrations') || '[]');
+    existing.push(reg);
+    localStorage.setItem('tuscany_registrations', JSON.stringify(existing));
+
+    // Populate confirmation summary
+    const summary = document.getElementById('confirm-summary');
+    summary.innerHTML = `
+      <div class="confirm-row"><span class="cr-label">Reference ID</span><span class="cr-value" style="font-family:monospace;color:var(--orange-dark)">${refId}</span></div>
+      <div class="confirm-row"><span class="cr-label">Child</span><span class="cr-value">${childFirst} ${childLast}</span></div>
+      <div class="confirm-row"><span class="cr-label">Age Group</span><span class="cr-value">Ages ${ageGroup}</span></div>
+      <div class="confirm-row"><span class="cr-label">Preferred Days</span><span class="cr-value">${days.join(' & ')}</span></div>
+      <div class="confirm-row"><span class="cr-label">Session Time</span><span class="cr-value">${sessionTime}</span></div>
+      <div class="confirm-row"><span class="cr-label">Parent</span><span class="cr-value">${parentFirst} ${parentLast}</span></div>
+      <div class="confirm-row"><span class="cr-label">Email</span><span class="cr-value">${parentEmail}</span></div>
+      <div class="confirm-row"><span class="cr-label">Emergency Contact</span><span class="cr-value">${emergName} (${emergRel})</span></div>
+      <div class="confirm-row"><span class="cr-label">Registered</span><span class="cr-value">${timestamp}</span></div>
+    `;
+
+    // Build plain-text summary for clipboard / email
+    const textSummary = `
+TUSCANY BASKETBALL CAMP — Registration Confirmation
+====================================================
+Reference ID:      ${refId}
+Registered:        ${timestamp}
+
+CHILD
+  Name:            ${childFirst} ${childLast}
+  Date of Birth:   ${childDob}
+  Age Group:       Ages ${ageGroup}
+  T-Shirt Size:    ${childShirt || 'Not specified'}
+
+SCHEDULE PREFERENCES
+  Preferred Days:  ${days.join(' & ')}
+  Session Time:    ${sessionTime}
+
+PARENT / GUARDIAN
+  Name:            ${parentFirst} ${parentLast}
+  Email:           ${parentEmail}
+  Phone:           ${parentPhone}
+
+EMERGENCY CONTACT
+  Name:            ${emergName}
+  Relationship:    ${emergRel}
+  Phone:           ${emergPhone}
+
+MEDICAL NOTES
+  ${medNotes}
+
+NEXT STEPS
+  A payment link will be sent after we confirm availability.
+  Questions? Reply to this email or reach out through the camp.
+
+Tuscany Club Summer Basketball Camp — Calgary, AB
+July – August 15, 2025
+`.trim();
+
+    // Mailto — parent confirmation
+    document.getElementById('btn-mailto-parent').onclick = () => {
+      const subject = encodeURIComponent(`Tuscany Basketball Camp — Registration Confirmed (${refId})`);
+      const body = encodeURIComponent(textSummary);
+      window.open(`mailto:${parentEmail}?subject=${subject}&body=${body}`, '_blank');
+    };
+
+    // Mailto — organizer copy
+    document.getElementById('btn-mailto-camp').onclick = () => {
+      const subject = encodeURIComponent(`New Registration: ${childFirst} ${childLast} — ${refId}`);
+      const body = encodeURIComponent(textSummary);
+      window.open(`mailto:?subject=${subject}&body=${body}`, '_blank');
+    };
+
+    // Copy to clipboard
+    document.getElementById('btn-copy-confirm').onclick = () => {
+      const btn = document.getElementById('btn-copy-confirm');
+      navigator.clipboard.writeText(textSummary).then(() => {
+        btn.textContent = '✅ Copied to Clipboard!';
+        setTimeout(() => { btn.textContent = '📋 Copy Confirmation Details'; }, 2500);
+      }).catch(() => {
+        // Fallback for browsers that block clipboard
+        const ta = document.createElement('textarea');
+        ta.value = textSummary;
+        ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.textContent = '✅ Copied!';
+        setTimeout(() => { btn.textContent = '📋 Copy Confirmation Details'; }, 2500);
+      });
+    };
+
+    // Go to step 4
+    goToStep(4);
+  }
+</script>
+
+</body>
+</html>
